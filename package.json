@@ -1,0 +1,15 @@
+{
+  "name": "founderkernel",
+  "version": "1.0.0",
+  "description": "Autonomous runway sentry, token burn throttler & microservice expense circuit-breaker",
+  "main": "dist/kernel_client.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["fintech", "runway-sentry", "circuit-breaker", "ai-cost-governance"],
+  "author": "Usman Bamidele",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
