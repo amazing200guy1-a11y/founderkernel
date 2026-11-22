@@ -6,40 +6,40 @@
   <title>FounderKernel AI — Autonomous Agent Governance & Financial Solvency Sentinel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     /* ══════════════════════════════════════════════════════════════
-       FOUNDERKERNEL AI — MEHD.AI AEROSPACE TITANIUM DESIGN SYSTEM
-       High-Contrast Crisp Platinum, Pure White Typography, Sub-0.07ms Solvency
+       FOUNDERKERNEL AI — PURE AEROSPACE TITANIUM & GUNMETAL
+       1:1 Match with Mehd.ai Precision Swiss Horology / Pagani Aesthetic
+       Monochromatic Platinum White • Sculpted Titanium Panels • Zero Fruit-Salad Colors
        ══════════════════════════════════════════════════════════════ */
     :root {
-      --bg: #03060B;
-      --bg-surface: #080D16;
-      --bg-card-top: #161F2E;
-      --bg-card-mid: #0E1522;
-      --bg-card-base: #090E17;
-      --border: rgba(200, 225, 255, 0.14);
-      --border-bright: rgba(200, 225, 255, 0.28);
-      --border-accent: rgba(0, 229, 255, 0.4);
-      --inset-bevel: inset 0 1px 0 rgba(255, 255, 255, 0.08);
-      --shadow-elevation: 0 16px 48px rgba(0, 0, 0, 0.75);
+      --bg: #030509;
+      --bg-surface: #070B12;
+      --bg-gunmetal-top: #1A2230;
+      --bg-gunmetal-mid: #121824;
+      --bg-gunmetal-base: #0B0F17;
+      --bg-tray: #0E1420;
+      
+      /* Subtle Metallic Hairlines & Bevels */
+      --border: rgba(200, 220, 240, 0.12);
+      --border-chamfer: rgba(200, 220, 240, 0.22);
+      --border-highlight: rgba(255, 255, 255, 0.18);
+      --inset-bevel: inset 0 1px 0 rgba(255, 255, 255, 0.09);
+      --shadow-elevation: 0 16px 44px rgba(0, 0, 0, 0.8);
 
-      /* High-Contrast Pure White Typography (Mehd.ai Standard) */
+      /* Monochromatic Platinum & Titanium Typography */
       --text-white: #FFFFFF;
       --text-platinum: #F8FAFC;
-      --text-dim: #94A3B8;
+      --text-silver: #E2E8F0;
+      --text-steel: #94A3B8;
       --text-muted: #64748B;
+      --text-dark: #334155;
 
-      /* Precision Cockpit Accents */
-      --cyan: #00E5FF;
-      --cyan-dim: rgba(0, 229, 255, 0.12);
-      --emerald: #10B981;
-      --emerald-dim: rgba(16, 185, 129, 0.12);
-      --amber: #F59E0B;
-      --amber-dim: rgba(245, 158, 11, 0.12);
-      --crimson: #FF3366;
-      --crimson-dim: rgba(255, 51, 102, 0.14);
-      --ice: #7DD3FC;
+      /* Understated Horological Accent Tones */
+      --ice-hairline: rgba(200, 225, 255, 0.25);
+      --status-emerald-subtle: #34D399;
+      --status-crimson-subtle: #F87171;
 
       --font-heading: 'Outfit', -apple-system, sans-serif;
       --font-body: 'Outfit', -apple-system, sans-serif;
@@ -56,19 +56,17 @@
 
     body {
       background: var(--bg);
-      color: var(--text-platinum);
+      color: var(--text-silver);
       font-family: var(--font-body);
       min-height: 100vh;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
       background-image:
-        radial-gradient(ellipse 90% 45% at 50% -5%, rgba(0, 229, 255, 0.08), transparent 75%),
-        radial-gradient(circle at 15% 20%, rgba(16, 185, 129, 0.04), transparent 50%),
-        radial-gradient(circle at 85% 65%, rgba(255, 51, 102, 0.035), transparent 50%),
-        linear-gradient(rgba(200, 225, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(200, 225, 255, 0.02) 1px, transparent 1px);
-      background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+        radial-gradient(ellipse 80% 40% at 50% -5%, rgba(200, 220, 240, 0.05), transparent 75%),
+        linear-gradient(rgba(200, 220, 240, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 220, 240, 0.015) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
     }
 
     .wrap {
@@ -79,19 +77,19 @@
       z-index: 1;
     }
 
-    /* ── SCULPTED METALLIC CARDS ─────────────────────────────────── */
+    /* ── SCULPTED GUNMETAL TITANIUM CARDS ────────────────────────── */
     .card {
-      background: linear-gradient(180deg, var(--bg-card-top) 0%, var(--bg-card-mid) 60%, var(--bg-card-base) 100%);
+      background: linear-gradient(180deg, var(--bg-gunmetal-top) 0%, var(--bg-gunmetal-mid) 60%, var(--bg-gunmetal-base) 100%);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-elevation), var(--inset-bevel);
       transition: border-color var(--tr), transform var(--tr);
     }
     .card:hover {
-      border-color: var(--border-bright);
+      border-color: var(--border-chamfer);
     }
 
-    /* ── BADGES & PILLS ──────────────────────────────────────────── */
+    /* ── TITANIUM PILLS & BADGES ─────────────────────────────────── */
     .badge {
       display: inline-flex;
       align-items: center;
@@ -103,19 +101,26 @@
       font-weight: 700;
       letter-spacing: 0.8px;
       text-transform: uppercase;
+      background: #141C28;
+      border: 1px solid var(--border);
+      color: var(--text-silver);
     }
-    .badge-white { background: rgba(255, 255, 255, 0.08); color: #FFF; border: 1px solid rgba(255, 255, 255, 0.2); }
-    .badge-cyan  { background: var(--cyan-dim); color: var(--cyan); border: 1px solid rgba(0, 229, 255, 0.35); }
-    .badge-green { background: var(--emerald-dim); color: var(--emerald); border: 1px solid rgba(16, 185, 129, 0.35); }
-    .badge-red   { background: var(--crimson-dim); color: var(--crimson); border: 1px solid rgba(255, 51, 102, 0.35); }
-    .badge-amber { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.35); }
+    .badge-titanium {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.16);
+      color: var(--text-white);
+    }
+    .badge-subtle {
+      background: rgba(200, 220, 240, 0.05);
+      border-color: rgba(200, 220, 240, 0.15);
+      color: var(--text-silver);
+    }
 
-    .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
-    .dot-cyan { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
-    .dot-green { background: var(--emerald); box-shadow: 0 0 8px var(--emerald); }
-    .dot-red { background: var(--crimson); box-shadow: 0 0 8px var(--crimson); }
+    .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+    .dot-white { background: #FFFFFF; box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); }
+    .dot-green { background: #34D399; box-shadow: 0 0 8px rgba(52, 211, 153, 0.6); }
 
-    /* ── HEADER & NAVIGATION ─────────────────────────────────────── */
+    /* ── HEADER ─────────────────────────────────────────────────── */
     .site-header {
       padding: 36px 0 24px;
       border-bottom: 1px solid var(--border);
@@ -135,15 +140,15 @@
       gap: 16px;
     }
     .brand-logo {
-      width: 48px;
-      height: 48px;
+      width: 46px;
+      height: 46px;
       border-radius: var(--radius-md);
-      background: linear-gradient(135deg, rgba(0, 229, 255, 0.25), rgba(16, 185, 129, 0.15));
-      border: 1px solid var(--border-accent);
+      background: linear-gradient(135deg, #1E2838 0%, #101724 100%);
+      border: 1px solid var(--border-chamfer);
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
     }
     .brand h1 {
       font-size: 28px;
@@ -155,16 +160,17 @@
     .brand p {
       font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--text-dim);
+      color: var(--text-steel);
       letter-spacing: 0.6px;
       text-transform: uppercase;
       margin-top: 4px;
     }
 
+    /* ── NAVIGATION TABS ─────────────────────────────────────────── */
     .nav-tabs {
       display: flex;
-      gap: 8px;
-      background: rgba(11, 16, 26, 0.8);
+      gap: 6px;
+      background: rgba(10, 14, 22, 0.9);
       padding: 5px;
       border-radius: var(--radius-md);
       border: 1px solid var(--border);
@@ -173,13 +179,13 @@
     .tab-btn {
       background: transparent;
       border: 1px solid transparent;
-      color: var(--text-dim);
-      padding: 10px 20px;
+      color: var(--text-steel);
+      padding: 10px 18px;
       border-radius: var(--radius-sm);
       font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.7px;
+      letter-spacing: 0.6px;
       cursor: pointer;
       transition: all var(--tr);
       display: flex;
@@ -189,16 +195,16 @@
     }
     .tab-btn:hover {
       color: var(--text-white);
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.03);
     }
     .tab-btn.active {
-      background: linear-gradient(180deg, #1C2738 0%, #111A27 100%);
-      color: var(--cyan);
-      border-color: var(--border-accent);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      background: linear-gradient(180deg, #222C3D 0%, #151D2A 100%);
+      color: var(--text-white);
+      border-color: var(--border-chamfer);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
     }
 
-    /* ── STATS HERO RIBBON ───────────────────────────────────────── */
+    /* ── STATS HERO RIBBON (ALL PURE PLATINUM WHITE NUMBERS) ────── */
     .stats-ribbon {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -207,7 +213,6 @@
     }
     .stat-card {
       padding: 22px;
-      position: relative;
     }
     .stat-label {
       font-family: var(--font-mono);
@@ -219,7 +224,7 @@
       margin-bottom: 8px;
     }
     .stat-val {
-      font-size: 32px;
+      font-size: 34px;
       font-weight: 800;
       color: var(--text-white);
       letter-spacing: -0.8px;
@@ -229,7 +234,7 @@
     .stat-sub {
       font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--text-dim);
+      color: var(--text-steel);
     }
 
     /* ── SECTION HEADER ──────────────────────────────────────────── */
@@ -251,14 +256,14 @@
       font-weight: 700;
       letter-spacing: 1.2px;
       text-transform: uppercase;
-      color: var(--text-white);
-      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-silver);
+      background: rgba(255, 255, 255, 0.04);
       padding: 4px 10px;
       border-radius: var(--radius-sm);
       border: 1px solid var(--border);
     }
 
-    /* ── 5-PILLAR DEFENSE MATRIX (SOLVES THE 5 DEVELOPER PROBLEMS) ─ */
+    /* ── 5-PILLAR DEFENSE MATRIX (TITANIUM SHADING) ──────────────── */
     .pillars-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -269,20 +274,20 @@
       padding: 20px;
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      background: linear-gradient(180deg, #131B2A 0%, #0B101A 100%);
+      background: linear-gradient(180deg, #161F2C 0%, #0E1420 100%);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
     }
     .pillar-box:hover {
-      border-color: var(--border-bright);
+      border-color: var(--border-chamfer);
     }
     .pillar-num {
       font-family: var(--font-mono);
       font-size: 10px;
       font-weight: 800;
-      color: var(--cyan);
+      color: var(--text-steel);
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-bottom: 6px;
@@ -296,19 +301,22 @@
     }
     .pillar-desc {
       font-size: 12px;
-      color: var(--text-dim);
+      color: var(--text-steel);
       line-height: 1.5;
       margin-bottom: 14px;
     }
     .pillar-metric {
       font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--emerald);
+      color: var(--text-silver);
       border-top: 1px solid var(--border);
       padding-top: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    .pillar-metric strong {
+      color: var(--text-white);
     }
 
     /* ── COCKPIT WORK BENCH ──────────────────────────────────────── */
@@ -333,7 +341,7 @@
       border-bottom: 1px solid var(--border);
     }
     .panel-title {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--text-white);
       display: flex;
@@ -351,7 +359,7 @@
       font-weight: 900;
       line-height: 1.0;
       letter-spacing: -2px;
-      color: var(--emerald);
+      color: var(--text-white);
       margin-bottom: 6px;
     }
     .runway-unit {
@@ -368,7 +376,7 @@
       font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 700;
-      color: var(--text-dim);
+      color: var(--text-steel);
       letter-spacing: 0.6px;
       text-transform: uppercase;
       display: block;
@@ -376,7 +384,7 @@
     }
     .form-input, .form-select {
       width: 100%;
-      background: #05080E;
+      background: #080D14;
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       padding: 9px 14px;
@@ -387,45 +395,41 @@
     }
     .form-input:focus, .form-select:focus {
       outline: none;
-      border-color: var(--cyan);
+      border-color: var(--border-chamfer);
     }
 
+    /* Sculpted Metallic Action Buttons */
     .btn-action {
-      background: linear-gradient(180deg, #00E5FF 0%, #00B4D8 100%);
-      color: #03060B;
-      border: none;
+      background: linear-gradient(180deg, #263347 0%, #182130 100%);
+      color: var(--text-white);
+      border: 1px solid var(--border-chamfer);
       border-radius: var(--radius-sm);
       padding: 11px 18px;
       font-family: var(--font-mono);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: 0.6px;
       cursor: pointer;
       width: 100%;
       transition: all var(--tr);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
     }
     .btn-action:hover {
+      background: linear-gradient(180deg, #2E3E56 0%, #1E293B 100%);
+      border-color: rgba(255, 255, 255, 0.3);
       transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(0, 229, 255, 0.35);
     }
     .btn-danger {
-      background: linear-gradient(180deg, #FF3366 0%, #D81B4E 100%);
-      color: #FFF;
+      background: linear-gradient(180deg, #3A1F26 0%, #251217 100%);
+      border-color: rgba(248, 113, 113, 0.3);
+      color: #FECACA;
     }
     .btn-danger:hover {
-      box-shadow: 0 6px 20px rgba(255, 51, 102, 0.4);
-    }
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border);
-      color: var(--text-white);
-    }
-    .btn-secondary:hover {
-      border-color: var(--border-bright);
-      background: rgba(255, 255, 255, 0.08);
+      background: linear-gradient(180deg, #48242D 0%, #2E151C 100%);
+      border-color: rgba(248, 113, 113, 0.5);
     }
 
-    /* Interactive Live Attack Injector */
+    /* Attack Injector Buttons */
     .attack-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -433,24 +437,30 @@
       margin-top: 10px;
     }
     .btn-test {
-      background: #0A101A;
+      background: #0E1522;
       border: 1px solid var(--border);
-      color: var(--text-white);
+      color: var(--text-silver);
       padding: 9px 10px;
       border-radius: var(--radius-sm);
       font-family: var(--font-mono);
       font-size: 10px;
-      font-weight: 700;
+      font-weight: 600;
       text-align: left;
       cursor: pointer;
       transition: all var(--tr);
     }
     .btn-test:hover {
-      border-color: var(--cyan);
-      background: #111A29;
+      border-color: var(--border-chamfer);
+      background: #151F30;
+      color: var(--text-white);
+    }
+    .btn-test strong {
+      color: var(--text-white);
+      display: block;
+      margin-bottom: 2px;
     }
 
-    /* Dual Telemetry Feed */
+    /* Telemetry Feed */
     .telemetry-grid {
       display: grid;
       grid-template-columns: 1.3fr 1fr;
@@ -463,7 +473,7 @@
       width: 100%;
       height: 140px;
       display: block;
-      background: #05080E;
+      background: #070B12;
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       margin: 12px 0;
@@ -477,7 +487,7 @@
       gap: 8px;
     }
     .audit-row {
-      background: rgba(12, 18, 28, 0.9);
+      background: rgba(13, 19, 29, 0.9);
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       padding: 10px 14px;
@@ -489,12 +499,12 @@
       font-size: 11px;
     }
     .audit-row.blocked {
-      border-color: rgba(255, 51, 102, 0.4);
-      background: rgba(255, 51, 102, 0.08);
+      border-color: rgba(248, 113, 113, 0.3);
+      background: rgba(248, 113, 113, 0.06);
     }
     .audit-row.degraded {
-      border-color: rgba(0, 229, 255, 0.4);
-      background: rgba(0, 229, 255, 0.08);
+      border-color: rgba(200, 220, 240, 0.25);
+      background: rgba(200, 220, 240, 0.05);
     }
 
     /* ── PAGES ───────────────────────────────────────────────────── */
@@ -502,9 +512,9 @@
     .page.active { display: block; animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* ── VERIFICATION SUITE (16/16 TESTS) ────────────────────────── */
+    /* ── VERIFICATION SUITE ──────────────────────────────────────── */
     .test-card {
-      background: rgba(12, 18, 28, 0.7);
+      background: rgba(13, 19, 29, 0.7);
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       padding: 12px 18px;
@@ -516,8 +526,8 @@
       margin-bottom: 8px;
     }
     .test-card:hover {
-      border-color: var(--border-bright);
-      background: rgba(16, 24, 38, 0.9);
+      border-color: var(--border-chamfer);
+      background: rgba(18, 26, 40, 0.9);
     }
     .test-title-col {
       display: flex;
@@ -528,7 +538,7 @@
       font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 700;
-      color: var(--cyan);
+      color: var(--text-steel);
       width: 24px;
     }
     .test-name {
@@ -539,23 +549,23 @@
 
     /* Code Viewer */
     .code-viewer {
-      background: #04070D;
+      background: #05080E;
       padding: 20px;
       font-family: var(--font-mono);
       font-size: 12px;
       line-height: 1.6;
-      color: #CAD5E2;
+      color: var(--text-silver);
       border-radius: var(--radius-sm);
       overflow-x: auto;
       max-height: 520px;
       overflow-y: auto;
       border: 1px solid var(--border);
     }
-    .kw { color: #00E5FF; font-weight: 700; }
-    .fn { color: #F59E0B; }
-    .str { color: #10B981; }
-    .com { color: #64748B; font-style: italic; }
-    .typ { color: #F8FAFC; font-weight: 600; }
+    .kw { color: #CBD5E1; font-weight: 700; }
+    .fn { color: #E2E8F0; }
+    .str { color: #94A3B8; }
+    .com { color: #475569; font-style: italic; }
+    .typ { color: #FFFFFF; font-weight: 600; }
 
     /* Comparison Table */
     .compare-table {
@@ -572,18 +582,18 @@
     .compare-table th {
       font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--text-white);
+      color: var(--text-steel);
       text-transform: uppercase;
       letter-spacing: 0.8px;
     }
     .compare-table td {
-      color: var(--text-platinum);
+      color: var(--text-silver);
     }
     .compare-table tr:hover td {
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255, 255, 255, 0.02);
     }
     .col-highlight {
-      color: var(--cyan) !important;
+      color: var(--text-white) !important;
       font-weight: 700;
       font-family: var(--font-mono) !important;
     }
@@ -599,7 +609,7 @@
       gap: 16px;
       font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--text-dim);
+      color: var(--text-muted);
     }
     .site-footer strong { color: var(--text-white); }
   </style>
@@ -612,7 +622,7 @@
       <div class="header-top">
         <div class="brand">
           <div class="brand-logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               <polyline points="9 12 12 15 16 10"></polyline>
             </svg>
@@ -624,10 +634,10 @@
         </div>
 
         <div style="display:flex; align-items:center; gap:10px;">
-          <span class="badge badge-cyan">
-            <span class="dot dot-cyan"></span> IN-LINE PROXY ACTIVE
+          <span class="badge badge-titanium">
+            <span class="dot dot-white"></span> IN-LINE PROXY ACTIVE
           </span>
-          <span class="badge badge-green" id="headerBenchmarkBadge">
+          <span class="badge badge-subtle" id="headerBenchmarkBadge">
             <span class="dot dot-green"></span> 16 / 16 PASS (0.013s)
           </span>
         </div>
@@ -654,26 +664,26 @@
       </nav>
     </header>
 
-    <!-- STATS HERO RIBBON -->
+    <!-- STATS HERO RIBBON (ALL PURE PLATINUM WHITE NUMBERS) -->
     <section class="stats-ribbon">
       <div class="card stat-card">
         <div class="stat-label">Operating Cash Reserve</div>
-        <div class="stat-val" style="color:var(--cyan);" id="mReserve">$500.00</div>
+        <div class="stat-val" id="mReserve">$500.00</div>
         <div class="stat-sub">Verified founder liquidity balance</div>
       </div>
       <div class="card stat-card">
         <div class="stat-label">Daily Spend Velocity</div>
-        <div class="stat-val" style="color:var(--amber);" id="mDailyBurn">$5.00 / day</div>
+        <div class="stat-val" id="mDailyBurn">$5.00 / day</div>
         <div class="stat-sub">Fixed base burn + active variable calls</div>
       </div>
       <div class="card stat-card">
         <div class="stat-label">Evaluation Latency</div>
-        <div class="stat-val" style="color:var(--emerald);">0.068ms</div>
+        <div class="stat-val">0.068ms</div>
         <div class="stat-sub">Sub-millisecond in-line Hoare guard</div>
       </div>
       <div class="card stat-card">
         <div class="stat-label">Down-Routing Savings</div>
-        <div class="stat-val" style="color:var(--emerald);" id="mSaved">94.0%</div>
+        <div class="stat-val" id="mSaved">94.0%</div>
         <div class="stat-sub">GPT-4o ($5.00) → GPT-4o-Mini ($0.15)</div>
       </div>
     </section>
@@ -683,7 +693,7 @@
          ══════════════════════════════════════════════════════════════ -->
     <div id="page-cockpit" class="page active">
       <div class="section-rule">
-        <span class="mono-label">5-Pillar Enterprise Defense Matrix (Direct Problem Solvers)</span>
+        <span class="mono-label">5-Pillar Enterprise Defense Matrix</span>
       </div>
 
       <!-- 5 Problem-Solving Pillars Showcase -->
@@ -758,19 +768,19 @@
         <div class="card panel-box">
           <div class="panel-header">
             <div class="panel-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 15 15"></polyline></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 15 15"></polyline></svg>
               Solvency Horizon
             </div>
-            <span class="badge badge-cyan">HOARE STATE</span>
+            <span class="badge badge-titanium">HOARE STATE</span>
           </div>
 
           <div class="runway-display-box">
             <div class="runway-big-days" id="runwayDays">100.0</div>
             <div class="runway-unit">Days of Operating Runway</div>
-            <div id="tierBadge" class="badge badge-green">TIER 0 // OPTIMAL</div>
+            <div id="tierBadge" class="badge badge-titanium">TIER 0 // OPTIMAL</div>
           </div>
 
-          <div style="font-family:var(--font-mono); font-size:11px; color:var(--text-dim); text-align:center; border-top:1px solid var(--border); padding-top:14px;">
+          <div style="font-family:var(--font-mono); font-size:11px; color:var(--text-steel); text-align:center; border-top:1px solid var(--border); padding-top:14px;">
             Formal Hoare Precondition holds: { Cash ≥ $500 ∧ Runway ≥ 60d }. Full frontier LLM access approved.
           </div>
         </div>
@@ -779,10 +789,10 @@
         <div class="card panel-box">
           <div class="panel-header">
             <div class="panel-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
               Live Gateway Dispatch
             </div>
-            <span class="badge badge-green">IN-LINE PROXY</span>
+            <span class="badge badge-titanium">IN-LINE PROXY</span>
           </div>
 
           <div class="form-group">
@@ -797,7 +807,7 @@
 
           <div class="form-group">
             <label class="form-label">Prompt Content (Firewall Checked)</label>
-            <input type="text" id="promptInput" class="form-input" value="Summarize the quarterly revenue report into 3 bullet points.">
+            <input type="text" id="promptInput" class="form-input" value="Summarize quarterly revenue report into 3 bullet points.">
           </div>
 
           <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:16px;">
@@ -810,33 +820,33 @@
         <div class="card panel-box">
           <div class="panel-header">
             <div class="panel-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
               Test The 5 Problems Live
             </div>
-            <span class="badge badge-amber">INTERACTIVE</span>
+            <span class="badge badge-titanium">INTERACTIVE</span>
           </div>
 
           <div class="attack-grid">
             <button class="btn-test" onclick="testJacking()">
-              <strong style="color:var(--crimson); display:block; margin-bottom:2px;">01 // Key Jacking</strong>
+              <strong>01 // Key Jacking</strong>
               Burst token drain test
             </button>
             <button class="btn-test" onclick="testDownRouting()">
-              <strong style="color:var(--emerald); display:block; margin-bottom:2px;">02 // Down-Route</strong>
+              <strong>02 // Down-Route</strong>
               94% token burn reduction
             </button>
             <button class="btn-test" onclick="testCapabilityPin()">
-              <strong style="color:var(--cyan); display:block; margin-bottom:2px;">03 // Schema Pin</strong>
+              <strong>03 // Schema Pin</strong>
               Structured output safety
             </button>
             <button class="btn-test" onclick="testInjection()">
-              <strong style="color:var(--crimson); display:block; margin-bottom:2px;">04 // Prompt Attack</strong>
+              <strong>04 // Prompt Attack</strong>
               0.008ms injection block
             </button>
           </div>
 
           <button class="btn-test" onclick="testEntropyPrune()" style="width:100%; margin-top:10px;">
-            <strong style="color:var(--amber); display:block; margin-bottom:2px;">05 // Context Entropy Pruning</strong>
+            <strong>05 // Context Entropy Pruning</strong>
             Eliminate recursive agent prompt bloat (300 lines deduplicated)
           </button>
         </div>
@@ -847,28 +857,28 @@
         <div class="card panel-box">
           <div class="panel-header">
             <div class="panel-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
               Reserve Trajectory & Spend Interceptions
             </div>
-            <span class="badge badge-cyan">REAL-TIME TRAJECTORY</span>
+            <span class="badge badge-titanium">REAL-TIME TRAJECTORY</span>
           </div>
 
           <canvas id="burnChart"></canvas>
 
-          <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:11px; color:var(--text-dim); border-top:1px solid var(--border); padding-top:12px;">
+          <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:11px; color:var(--text-steel); border-top:1px solid var(--border); padding-top:12px;">
             <div>Dispatched: <strong id="spentVal" style="color:#FFF;">$0.00</strong></div>
-            <div>Remaining Reserve: <strong id="reserveVal" style="color:var(--cyan);">$500.00</strong></div>
-            <div>Interceptions: <strong id="blockedCount" style="color:var(--crimson);">0 BLOCKED</strong></div>
+            <div>Remaining Reserve: <strong id="reserveVal" style="color:#FFF;">$500.00</strong></div>
+            <div>Interceptions: <strong id="blockedCount" style="color:#FFF;">0 BLOCKED</strong></div>
           </div>
         </div>
 
         <div class="card panel-box">
           <div class="panel-header">
             <div class="panel-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
               Tamper-Evident SHA-256 Audit Stream
             </div>
-            <span class="badge badge-green">MERKLE SEALED</span>
+            <span class="badge badge-titanium">MERKLE SEALED</span>
           </div>
 
           <div class="audit-feed" id="auditLog">
@@ -888,29 +898,29 @@
 
       <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-bottom:28px;">
         <div class="card panel-box">
-          <div style="font-family:var(--font-mono); font-size:10px; color:var(--cyan); font-weight:800; margin-bottom:6px;">STAGE 01 // AGENT EMITTER</div>
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-steel); font-weight:800; margin-bottom:6px;">STAGE 01 // AGENT EMITTER</div>
           <div style="font-size:18px; font-weight:800; color:#FFF; margin-bottom:8px;">Client Application</div>
-          <p style="font-size:12px; color:var(--text-dim); margin-bottom:14px;">CrewAI, LangChain, or custom autonomous SWE loop emitting LLM completion calls with configured OpenAI SDK.</p>
-          <div style="border-top:1px solid var(--border); padding-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--text-dim);">
+          <p style="font-size:12px; color:var(--text-steel); margin-bottom:14px;">CrewAI, LangChain, or custom autonomous SWE loop emitting LLM completion calls with configured OpenAI SDK.</p>
+          <div style="border-top:1px solid var(--border); padding-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--text-steel);">
             <div>SDK Target: <strong style="color:#FFF;">https://gateway.founderkernel.internal/v1</strong></div>
           </div>
         </div>
 
-        <div class="card panel-box" style="border-color:var(--cyan); box-shadow:0 0 24px rgba(0,229,255,0.15);">
-          <div style="font-family:var(--font-mono); font-size:10px; color:var(--cyan); font-weight:800; margin-bottom:6px;">STAGE 02 // CIRCUIT BREAKER</div>
+        <div class="card panel-box" style="border-color:var(--border-chamfer); box-shadow:0 0 24px rgba(255,255,255,0.04);">
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-white); font-weight:800; margin-bottom:6px;">STAGE 02 // CIRCUIT BREAKER</div>
           <div style="font-size:18px; font-weight:800; color:#FFF; margin-bottom:8px;">FounderKernel Sentry</div>
-          <p style="font-size:12px; color:var(--text-dim); margin-bottom:14px;">Sub-0.07ms Hoare evaluation, HMAC token-velocity checks, prompt firewall scanning, and automatic down-routing.</p>
-          <div style="border-top:1px solid var(--border); padding-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--text-dim);">
-            <div>Inspection Overhead: <strong style="color:var(--emerald);">0.068 ms (Deterministic)</strong></div>
+          <p style="font-size:12px; color:var(--text-steel); margin-bottom:14px;">Sub-0.07ms Hoare evaluation, HMAC token-velocity checks, prompt firewall scanning, and automatic down-routing.</p>
+          <div style="border-top:1px solid var(--border); padding-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--text-steel);">
+            <div>Inspection Overhead: <strong style="color:#FFF;">0.068 ms (Deterministic)</strong></div>
           </div>
         </div>
 
         <div class="card panel-box">
-          <div style="font-family:var(--font-mono); font-size:10px; color:var(--emerald); font-weight:800; margin-bottom:6px;">STAGE 03 // MODEL PROVIDERS</div>
+          <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-steel); font-weight:800; margin-bottom:6px;">STAGE 03 // MODEL PROVIDERS</div>
           <div style="font-size:18px; font-weight:800; color:#FFF; margin-bottom:8px;">Frontier Settlement</div>
-          <p style="font-size:12px; color:var(--text-dim); margin-bottom:14px;">OpenAI, Anthropic, Google Cloud API endpoints settling verified tokens with 100% solvency bounds.</p>
-          <div style="border-top:1px solid var(--border); padding-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--text-dim);">
-            <div>Uncapped Overdrafts: <strong style="color:var(--emerald);">0% Guaranteed</strong></div>
+          <p style="font-size:12px; color:var(--text-steel); margin-bottom:14px;">OpenAI, Anthropic, Google Cloud API endpoints settling verified tokens with 100% solvency bounds.</p>
+          <div style="border-top:1px solid var(--border); padding-top:10px; font-family:var(--font-mono); font-size:11px; color:var(--text-steel);">
+            <div>Uncapped Overdrafts: <strong style="color:#FFF;">0% Guaranteed</strong></div>
           </div>
         </div>
       </div>
@@ -919,10 +929,10 @@
       <div class="card panel-box">
         <div class="panel-header">
           <div class="panel-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
             Capability Pinning & Down-Routing Decision Table
           </div>
-          <span class="badge badge-cyan">ZERO SCHEMA CORRUPTION</span>
+          <span class="badge badge-titanium">ZERO SCHEMA CORRUPTION</span>
         </div>
 
         <table class="compare-table">
@@ -940,34 +950,34 @@
               <td><strong>Simple Text Generation</strong></td>
               <td>Low (Basic Prompt)</td>
               <td class="col-highlight">Down-Route to gpt-4o-mini</td>
-              <td style="color:var(--emerald); font-weight:700;">$0.15 / 1M (-94%)</td>
+              <td style="color:#FFF; font-weight:700;">$0.15 / 1M (-94%)</td>
               <td>100% Exact JSON Schema</td>
             </tr>
             <tr>
               <td><strong>Structured Output (json_schema)</strong></td>
               <td>Critical Syntax Invariant</td>
-              <td style="color:var(--cyan); font-weight:700;">PINNED TO GPT-4O</td>
+              <td style="color:#FFF; font-weight:700;">PINNED TO GPT-4O</td>
               <td>$5.00 / 1M (Passthrough)</td>
               <td>Guaranteed Zero Format Drop</td>
             </tr>
             <tr>
               <td><strong>Function Calling (tools=[...])</strong></td>
               <td>Tool Definition Invariant</td>
-              <td style="color:var(--cyan); font-weight:700;">PINNED TO FRONTIER</td>
+              <td style="color:#FFF; font-weight:700;">PINNED TO FRONTIER</td>
               <td>$5.00 / 1M (Passthrough)</td>
               <td>Tool Call Signature Intact</td>
             </tr>
             <tr>
               <td><strong>Prompt Injection String</strong></td>
               <td>Adversarial Bypass</td>
-              <td style="color:var(--crimson); font-weight:700;">HARD REJECT (0.008ms)</td>
+              <td style="color:#FECACA; font-weight:700;">HARD REJECT (0.008ms)</td>
               <td>$0.00 (Blocked)</td>
               <td>HTTP 403 Forbidden</td>
             </tr>
             <tr>
               <td><strong>Token Burst Spike (&gt; 50k tokens)</strong></td>
               <td>LLM Jacking Drain</td>
-              <td style="color:var(--crimson); font-weight:700;">VELOCITY CUTOFF</td>
+              <td style="color:#FECACA; font-weight:700;">VELOCITY CUTOFF</td>
               <td>$0.00 (Blocked)</td>
               <td>HTTP 429 Throttle Circuit</td>
             </tr>
@@ -1021,27 +1031,27 @@
 
         <div style="display:flex; flex-direction:column; gap:12px;">
           <div class="card panel-box">
-            <div style="font-family:var(--font-mono); font-size:10px; color:var(--cyan); font-weight:700;">INVARIANT 01 // RUNWAY SOLVENCY</div>
+            <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-steel); font-weight:700;">INVARIANT 01 // RUNWAY SOLVENCY</div>
             <div style="font-family:var(--font-mono); font-size:12px; color:#FFF; margin:6px 0; background:#04070D; padding:8px 10px; border-radius:4px; border:1px solid var(--border);">∀ t, Reserve(t) - Cost(t) ≥ 0 ∧ Runway(t) ≥ 14d</div>
-            <div style="font-size:11px; color:var(--text-dim);">Operating bankroll is strictly protected; all billing severed before insolvency.</div>
+            <div style="font-size:11px; color:var(--text-steel);">Operating bankroll is strictly protected; all billing severed before insolvency.</div>
           </div>
 
           <div class="card panel-box">
-            <div style="font-family:var(--font-mono); font-size:10px; color:var(--crimson); font-weight:700;">INVARIANT 02 // ANTI-JACKING HMAC VELOCITY</div>
+            <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-steel); font-weight:700;">INVARIANT 02 // ANTI-JACKING HMAC VELOCITY</div>
             <div style="font-family:var(--font-mono); font-size:12px; color:#FFF; margin:6px 0; background:#04070D; padding:8px 10px; border-radius:4px; border:1px solid var(--border);">TokenVelocity(60s) &gt; 50k tokens ⟹ SeverSocket</div>
-            <div style="font-size:11px; color:var(--text-dim);">Prevents stolen API keys and hijacked bots from draining thousands in minutes.</div>
+            <div style="font-size:11px; color:var(--text-steel);">Prevents stolen API keys and hijacked bots from draining thousands in minutes.</div>
           </div>
 
           <div class="card panel-box">
-            <div style="font-family:var(--font-mono); font-size:10px; color:var(--emerald); font-weight:700;">INVARIANT 03 // DOWN-ROUTING CAPABILITY PIN</div>
+            <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-steel); font-weight:700;">INVARIANT 03 // DOWN-ROUTING CAPABILITY PIN</div>
             <div style="font-family:var(--font-mono); font-size:12px; color:#FFF; margin:6px 0; background:#04070D; padding:8px 10px; border-radius:4px; border:1px solid var(--border);">HasJsonSchema(req) ∨ HasTools(req) ⟹ PinFrontier</div>
-            <div style="font-size:11px; color:var(--text-dim);">Zero schema failure guarantee; down-routing only triggers on safe prompt payloads.</div>
+            <div style="font-size:11px; color:var(--text-steel);">Zero schema failure guarantee; down-routing only triggers on safe prompt payloads.</div>
           </div>
 
           <div class="card panel-box">
-            <div style="font-family:var(--font-mono); font-size:10px; color:var(--amber); font-weight:700;">INVARIANT 04 // MERKLE LEDGER PROOF</div>
+            <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-steel); font-weight:700;">INVARIANT 04 // MERKLE LEDGER PROOF</div>
             <div style="font-family:var(--font-mono); font-size:12px; color:#FFF; margin:6px 0; background:#04070D; padding:8px 10px; border-radius:4px; border:1px solid var(--border);">Root_n = SHA256(Tx_n ‖ Root_{n-1})</div>
-            <div style="font-size:11px; color:var(--text-dim);">Tamper-evident cryptographic ledger of all approved token spend for audits.</div>
+            <div style="font-size:11px; color:var(--text-steel);">Tamper-evident cryptographic ledger of all approved token spend for audits.</div>
           </div>
         </div>
       </div>
@@ -1057,8 +1067,8 @@
 
       <div class="card panel-box" style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
         <div>
-          <div style="font-size:32px; font-weight:900; color:var(--emerald); line-height:1.1;">16 / 16 PASS</div>
-          <div style="font-family:var(--font-mono); font-size:12px; color:var(--text-white); margin-top:4px;">test_founder_kernel.py • Total Run Time: 0.013s • Avg Latency: 0.068ms</div>
+          <div style="font-size:32px; font-weight:900; color:var(--text-white); line-height:1.1;">16 / 16 PASS</div>
+          <div style="font-family:var(--font-mono); font-size:12px; color:var(--text-steel); margin-top:4px;">test_founder_kernel.py • Total Run Time: 0.013s • Avg Latency: 0.068ms</div>
         </div>
         <button class="btn-action" onclick="runVerificationBenchmark()" style="width:auto; padding:12px 24px;">
           RE-RUN FORMAL VERIFICATION
@@ -1106,24 +1116,17 @@
       const runway = calcRunway();
       const daysEl = document.getElementById('runwayDays');
       daysEl.textContent = runway.toFixed(1);
+      daysEl.style.color = '#FFFFFF';
 
       const tb = document.getElementById('tierBadge');
       if (runway >= 60) {
         tb.textContent = 'TIER 0 // OPTIMAL';
-        tb.className = 'badge badge-green';
-        daysEl.style.color = 'var(--emerald)';
       } else if (runway >= 30) {
         tb.textContent = 'TIER 1 // THROTTLED';
-        tb.className = 'badge badge-amber';
-        daysEl.style.color = 'var(--amber)';
       } else if (runway >= 14) {
         tb.textContent = 'TIER 2 // DOWNGRADED';
-        tb.className = 'badge badge-cyan';
-        daysEl.style.color = 'var(--cyan)';
       } else {
         tb.textContent = 'TIER 3 // HARD HALT';
-        tb.className = 'badge badge-red';
-        daysEl.style.color = 'var(--crimson)';
       }
 
       document.getElementById('mReserve').textContent = '$' + reserve.toFixed(2);
@@ -1140,18 +1143,17 @@
     function addAuditRow(verdict, svc, cost, cssClass, reason, latency) {
       const container = document.getElementById('auditLog');
       const hash = Array.from({length: 8}, () => Math.floor(Math.random()*16).toString(16)).join('');
-      const badgeCls = verdict === 'APPROVED' ? 'badge-green' : (verdict === 'BLOCKED' ? 'badge-red' : 'badge-cyan');
 
       const row = document.createElement('div');
       row.className = `audit-row ${cssClass}`;
       row.innerHTML = `
         <div>
-          <span class="badge ${badgeCls}">${verdict}</span>
+          <span class="badge badge-titanium">${verdict}</span>
           <span style="color:#FFF; margin-left:6px; font-weight:600;">${svc}</span>
-          ${reason ? `<div style="font-size:10px; color:var(--text-dim); margin-top:2px;">${reason}</div>` : ''}
+          ${reason ? `<div style="font-size:10px; color:var(--text-steel); margin-top:2px;">${reason}</div>` : ''}
         </div>
         <div style="text-align:right;">
-          <span style="color:var(--cyan); font-weight:700;">$${cost.toFixed(2)}</span>
+          <span style="color:#FFF; font-weight:700;">$${cost.toFixed(2)}</span>
           <div style="font-size:9px; color:var(--text-muted);">#${hash} • ${latency}ms</div>
         </div>
       `;
@@ -1163,7 +1165,6 @@
       const prompt = document.getElementById('promptInput').value;
       const t0 = performance.now();
 
-      // Check injection
       if (/ignore previous instructions|drop table|system override/i.test(prompt)) {
         blockedCount++;
         addAuditRow('BLOCKED', svc, 5.00, 'blocked', 'Firewall: Adversarial injection detected', '0.008');
@@ -1171,7 +1172,6 @@
         return;
       }
 
-      // Safe dispatch
       const cost = 0.30;
       reserve -= cost;
       totalSpent += cost;
@@ -1250,7 +1250,7 @@
         y: canvas.height - (Math.max(v, 0) / max) * (canvas.height - 24) - 12
       }));
 
-      ctx.strokeStyle = 'rgba(200, 225, 255, 0.08)';
+      ctx.strokeStyle = 'rgba(200, 220, 240, 0.08)';
       ctx.lineWidth = 1;
       for (let y = 20; y < canvas.height; y += 30) {
         ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
@@ -1259,14 +1259,14 @@
       ctx.beginPath();
       ctx.moveTo(pts[0].x, pts[0].y);
       pts.forEach(p => ctx.lineTo(p.x, p.y));
-      ctx.strokeStyle = '#00E5FF';
-      ctx.lineWidth = 2.5;
+      ctx.strokeStyle = '#FFFFFF';
+      ctx.lineWidth = 2.0;
       ctx.stroke();
 
       ctx.lineTo(canvas.width, canvas.height);
       ctx.lineTo(0, canvas.height);
       ctx.closePath();
-      ctx.fillStyle = 'rgba(0, 229, 255, 0.08)';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.04)';
       ctx.fill();
     }
 
@@ -1295,12 +1295,12 @@
         <div class="test-card">
           <div class="test-title-col">
             <span class="test-num">${t.num}</span>
-            <span class="badge badge-green">PASS</span>
+            <span class="badge badge-titanium">PASS</span>
             <span class="test-name">${t.name}</span>
           </div>
           <div style="display:flex; align-items:center; gap:12px;">
-            <span class="badge badge-cyan">${t.cat}</span>
-            <span style="font-family:var(--font-mono); font-size:11px; color:var(--text-dim);">${t.latency}</span>
+            <span class="badge badge-subtle">${t.cat}</span>
+            <span style="font-family:var(--font-mono); font-size:11px; color:var(--text-steel);">${t.latency}</span>
           </div>
         </div>
       `).join('');
@@ -1308,7 +1308,7 @@
 
     function runVerificationBenchmark() {
       const b = document.getElementById('headerBenchmarkBadge');
-      b.innerHTML = '<span class="dot dot-green"></span> RUNNING 16 TESTS...';
+      b.innerHTML = '<span class="dot dot-white"></span> RUNNING 16 TESTS...';
       setTimeout(() => {
         b.innerHTML = '<span class="dot dot-green"></span> 16 / 16 PASS (0.013s)';
         renderVerificationSuite();
