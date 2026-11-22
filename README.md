@@ -47,4 +47,4 @@ Open `index.html` in any browser to run the interactive runway simulation.
 ---
 
 ## 🛡️ License
-MIT License. Built by Usman Bamidele for the HETIC 2026 Hackathon.
+MIT License. Built by Usman Bamidele for open-source developer financial governance.

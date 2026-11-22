@@ -3,7 +3,7 @@
 FOUNDERKERNEL: AUTONOMOUS RUNWAY SENTRY & MICROSERVICE EXPENSE CIRCUIT-BREAKER
 =============================================================================
 Author: Usman Bamidele (100L Mathematics Student, FUNAAB)
-Track: Fintech, Enterprise AI Governance & Solo-Founder Solvency (HETIC 2026)
+Track: Fintech, Enterprise AI Governance & Solo-Founder Solvency
 Moat: Microsecond burn velocity modeling, exponential loop interceptor, and staged circuit-breaker degradation.
 """
 

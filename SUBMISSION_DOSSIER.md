@@ -1,7 +1,6 @@
 # SUBMISSION DOSSIER: FounderKernel
 ## Autonomous Runway Sentry, Token Burn Throttler & Microservice Expense Circuit-Breaker for Solo Founders
-**Competition:** HETIC 2026 (Devpost)  
-**Track:** Fintech, Enterprise AI Governance & Solo-Founder Solvency  
+**Track:** Fintech, Enterprise AI Governance & Solo-Founder Solvency (Open Innovation)  
 **Author / Developer:** Usman Bamidele (100L Mathematics Student, FUNAAB, Abeokuta, Nigeria)  
 **GitHub:** `https://github.com/amazing200guy1-a11y/founderkernel`  
 **Live Cockpit:** `index.html`  
